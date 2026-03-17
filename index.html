@@ -10,7 +10,14 @@
 <link rel="stylesheet" href="css/style.css">
 <script src="js/openclose.js"></script>
 <script src="js/fixmenu_pagetop.js"></script>
-<script src="js/fetch-users.js" defer></script>
+<script>
+window.SUPABASE_CONFIG = {
+	url: 'https://gjhjdyfysbszyhkksqhh.supabase.co',
+	anonKey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdqaGpkeWZ5c2Jzenloa2tzcWhoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM3MDgzMTksImV4cCI6MjA4OTI4NDMxOX0.-4WcZF1PLhvxCgzHfnb8HHPDk_izMlnHmLU29xqp-AM',
+	table: 'News'
+};
+</script>
+<script type="module" src="js/fetch-users.js"></script>
 </head>
 
 <body class="home">
@@ -30,9 +37,9 @@
 </nav>
 
 <section class="db-panel">
-<h2>Supabase Users</h2>
-<p>Fetch rows from <strong>auth.users</strong> through the local API.</p>
-<p><button type="button" class="btn" id="fetch-users-button">Fetch users</button></p>
+<h2>Supabase News</h2>
+<p>Read rows from the <strong>news</strong> table directly from Supabase on the frontend.</p>
+<p><button type="button" class="btn" id="fetch-users-button">Get news</button></p>
 <p id="fetch-users-status">Idle</p>
 <pre id="fetch-users-output"></pre>
 </section>
