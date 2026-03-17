@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>企業・ビジネスサイト向け 無料ホームページテンプレート tp_biz53</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="ここにサイト説明を入れます">
+<meta name="keywords" content="キーワード１,キーワード２,キーワード３,キーワード４,キーワード５">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/openclose.js"></script>
+<script src="js/fixmenu_pagetop.js"></script>
+<script src="js/fetch-users.js" defer></script>
+</head>
+
+<body class="home">
+
+<header>
+<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="SAMPLE COMPANY"></a></h1>
+<p id="news"><span class="newicon">お知らせ</span><a href="news.html">2019/12/02…tp_biz53公開。</a></p>
+</header>
+
+<nav id="mainimg">
+<ul>
+<li id="img1"><a href="works.html"><span>Works</span></a></li>
+<li id="img2"><a href="company.html"><span>Company</span></a></li>
+<li id="img3"><a href="recruit.html"><span>Recruit</span></a></li>
+<li id="img4"><a href="contact.html"><span>Contact</span></a></li>
+</ul>
+</nav>
+
+<section class="db-panel">
+<h2>Supabase Users</h2>
+<p>Fetch rows from <strong>auth.users</strong> through the local API.</p>
+<p><button type="button" class="btn" id="fetch-users-button">Fetch users</button></p>
+<p id="fetch-users-status">Idle</p>
+<pre id="fetch-users-output"></pre>
+</section>
+
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="news.html">News</a></li>
+<li><a href="works.html">Works</a></li>
+<li><a href="company.html">Company</a></li>
+<li><a href="recruit.html">Recruit</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+<!--ページの上部に戻る「↑」ボタン-->
+<p class="nav-fix-pos-pagetop"><a href="#">↑</a></p>
+
+<!--メニュー開閉ボタン-->
+<div id="menubar_hdr" class="close"></div>
+
+<!--メニューの開閉処理条件設定　800px以下-->
+<script>
+if (OCwindowWidth() <= 800) {
+	open_close("menubar_hdr", "menubar-s");
+}
+</script>
+
+</body>
+</html>
